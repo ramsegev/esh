@@ -103,6 +103,36 @@ const styles = {
         position: "absolute",
         transform: "translate(-50%, -50%)"
     },
+    video: {
+        border: "0px solid",
+        maxWidth: "454px",
+        userSelect: "none",
+        borderTopLeftRadius: "167px",
+        borderTopRightRadius: "167px"
+    },
+    image: {
+        border: "0px solid",
+        userSelect: "none",
+        borderTopLeftRadius: "167px",
+        borderTopRightRadius: "167px"
+    },
+    content: { padding: "1rem" },
+    date: {
+        color: "rgba(0, 0, 0, 0.6)",
+        fontSize: "0.875rem",
+        marginBottom: "0.5rem"
+    },
+    title: {
+        fontSize: "1.25rem",
+        fontWeight: "bold",
+        marginBottom: "0.5rem"
+    },
+    description: {
+        color: "rgba(0, 0, 0, 0.8)",
+        overflow: "hidden",
+        fontSize: "0.875rem",
+        maxHeight: "70px"
+    },
     "@-webkit-keyframes keyframes-fadeIn": {
         "0%": { opacity: 0 },
         "100%": { opacity: 1 }
