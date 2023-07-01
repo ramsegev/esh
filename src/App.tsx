@@ -1,11 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Home from "./components/Home";
-function App() {
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './components/Home';
+import Nav from "./components/Nav";
+
+const App: React.FC = () => {
   return (
-    <Home/>
+      <>
+        <Router >
+            <Nav/>
+          <Routes>
+            <Route path="/" element={<Home/>}/>
+          </Routes>
+        </Router>
+      </>
   );
-}
+};
 
 export default App;
